@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout 3</title>
+    <style>
+        #r1{
+            background-color: gray;
+            height: 50px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #r1c1,#r1c2{
+            background-color: gray;
+            width: 50%;
+            float: left;            
+        }
+        #r2{
+            height: 800px;
+            width: 100%;
+        }
+        #r2r1,#r2r2,#r2r3,#r2r4{
+            height: 190px;
+            width: 100%;
+            margin-bottom: 10px
+        }
+        #r2r1 div,#r2r2 div, #r2r3 div, #r2r4 div{
+            height: 190px;
+            width: 23.5%;
+            margin-right: 2%;
+            background-color: gray;
+            float: left;
+        }
+        #r2r1 div:last-child,#r2r2 div:last-child,#r2r3 div:last-child, #r2r4 div:last-child{
+            margin-right: 0px;
+            width: 23.5%;
+        }
+        #r3{
+            height: 200px;
+            width: 100%;
+            margin-bottom:10px;
+        }
+        #r3{
+            height:200px;
+            width: 100%;
+            margin-bottom:10px;
+        }
+        #r3c1,#r3c2,#r3c3{
+            height: 100px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        #r3c1,#r3c2{
+            height: 100px;
+            width: 32.2%;
+            margin-right: 1.8%;
+            float: left;
+            background-color: gray;
+            padding-top: 100px;
+        }
+        #r3c3{
+            height: 100px;
+            width: 31.8%;
+            float: left;
+            background-color: gray;
+            padding-top: 100px;
+        }
+        #r4{
+            background-color: gray;
+            text-align: center;
+            height: 50px;
+            width: 100%;
+            padding-top: 7px;
+        }
+        #r3c1 div,#r3c2 div,#r3c3 div{
+            float:left;
+        width: 31.8%;
+        }
+
+        </style>
+
+</head>
+<body>
+    <div id="r1"> 
+        <div id="r1c1"> Logo</div>
+        <div id="r1c2"> Navigation</div>
+    </div>    
+    <div id="r2>">
+            <div id="r2r1">
+            <div id="r2r1c1"></div>
+            <div id="r2r1c2"></div>
+            <div id="r2r1c3"></div>
+            <div id="r2r1c4"></div>
+            </div>
+        <div id="r2r2">
+            <div id="r2r2c1"></div>
+            <div id="r2r2c2"></div>
+            <div id="r2r2c3"></div>
+            <div id="r2r2c4"></div>
+        </div>    
+        <div id="r2r3">
+            <div id="r2r3c1"></div>
+            <div id="r2r3c2"></div>
+            <div id="r2r3c3"></div>
+            <div id="r2r3c4"></div>
+        </div>   
+        <div id="r2r4">
+            <div id="r2r4c1"></div>
+            <div id="r2r4c2"></div>
+            <div id="r2r4c3"></div>
+            <div id="r2r4c4"></div>
+        </div>
+    </div>
+        <div id="r3">
+            <div id="r3c1">Left</div>
+            <div id="r3c2">Center</div>
+            <div id="r3c3">Right</div>
+        </div>
+    <div id="r4">Footer</div>    
+
+</body>
+</html>

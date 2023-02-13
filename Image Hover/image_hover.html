@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Image Hover Effect</title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+        .img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .a {
+            position: relative;
+            width: 50%;
+            margin: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 500ms;
+            bottom: 0;
+            background-color: gold;
+        }
+
+        .a:hover .overlay {
+            opacity: 1;
+        }
+
+        .name {
+            color: white;
+            height: 30px;
+            width:80px;
+            padding-top: 10px;
+            background-color: black;
+            font-size: 15px;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Image Hover Effect</h1>
+
+    <div class="a">
+        <img src="pexels-darshak-pandya-574313.jpg" alt="Image" class="img">
+        <div class="overlay">
+            <div class="name">Golden Temple</div>
+        </div>
+    </div>
+    
+</body>
+</html>

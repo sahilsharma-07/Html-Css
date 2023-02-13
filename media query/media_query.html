@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> Media Query </title>
+
+    <style>
+
+        body {
+            background-image: linear-gradient(to right bottom , rgb(0, 221, 255) , rgb(219, 63, 236));
+        }
+        div {
+            background-color: red;
+            color: aqua;
+            text-align: center;
+            height: 70px;
+            margin-bottom: 10px;
+            font-family: cursive;
+            font-size: 30px;
+            width: 100%;
+        }
+
+        @media (min-height:100px) and (max-height:200px) {
+            #r1 {
+                background-color: yellow;
+                color: red;
+            }
+        }
+
+        @media (min-height:200px) and (max-height:300px) {
+            #r2 {
+                background-color: rgb(0, 234, 255);
+                color: red;
+            }
+        }
+        @media (min-height:300px) and (max-height:400px) {
+            #r3 {
+                background-color: rgb(0, 255, 4);
+                color: red;
+            }
+        }
+        @media (min-height:400px) and (max-height:500px) {
+            #r4 {
+                background-color: rgb(140, 0, 255);
+                color: red;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="r1"> Hello 🤗</div>
+    <div id="r2"> World 🌏</div>
+    <div id="r3"> Media 🎥</div>
+    <div id="r4"> Query 🧐</div>
+    
+</body>
+</html>
